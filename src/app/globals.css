@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -16,6 +16,8 @@
   }
 }
 
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,9 +27,69 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+*/
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* .menu_style::after {
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    width: 0%;
+    border-bottom: 0.2rem solid var(--main-color);
+    transition: all 0.3s linear;
+} */
+
+@layer base {
+    p {
+        @apply text-base tracking-[0.05rem];
+    }
+
+    .container {
+        @apply px-6 py-16 mx-auto;
+    }
+
+    .contact_input {
+        @apply block w-full px-3 py-2 mt-[5px] border-none rounded-sm input_box_shadow;
+    }
+}
+
+p {
+    font-size: 1rem;
+    /*line-height: 1.5;*/
+    /* margin: 2rem 0 4rem 0; */
+    font-weight: 300;
+    /* letter-spacing: 0.05rem;  */
+    /* line-height: 1.65; */
+}
+
+/* Box shadow */
+
+.custom-box-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card_box_shadow {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.contact_card_shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.input_box_shadow {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+@layer components {
+    .card-style-comp {
+        @apply overflow-hidden duration-200 ease-linear hover:scale-105 contact_card_shadow;
+    }
+
+    .menu_style {
+        @apply relative inline-block  after:content-[''] after:absolute  after:border-b-[3px] after:border-red-500 after:-bottom-1   after:left-0 after:transition-all after:duration-300 after:w-0 hover:after:w-full;
+    }
+
+    .footer_menu_style {
+        @apply relative inline-block  after:content-[''] after:absolute  after:border-b-[3px] after:border-red-500 after:-bottom-1   after:left-0 after:transition-all after:duration-300 after:w-1/3 hover:after:w-full;
+    }
 }
