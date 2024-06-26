@@ -2,7 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import Image from 'next/image'
-import Logo from '@/../public/red-logo.png'
+// import Logo from '@/../public/red-logo.png'
+import Logo from '@/../public/deepFlix_logo_2.svg'
 const Footer = () => {
     return (
         <footer className="text-white bg-black">
@@ -68,7 +69,7 @@ const Footer = () => {
                             <a href="#">Oppenheimer</a>
                         </li>
                         <li>
-                            s<a href="#">The Fall Guy</a>
+                            <a href="#">The Fall Guy</a>
                         </li>
                         <li>
                             <a href="#">Deadpool</a>
@@ -83,7 +84,7 @@ const Footer = () => {
                             <a href="#">My account</a>
                         </li>
                         <li>
-                            <a href="#">Prefrences</a>
+                            <a href="#">Preferences</a>
                         </li>
                         <li>
                             <a href="#">Purchase</a>

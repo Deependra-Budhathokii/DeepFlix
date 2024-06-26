@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import Logo from '@/../public/logo.png'
+// import Logo from '@/../public/logo.png'
+import Logo from '@/../public/deepFlix_main_logo.svg'
 import Nav from './Nav'
 import Navbar from './Navbar'
 import Image from 'next/image'
