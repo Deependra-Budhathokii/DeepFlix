@@ -25,7 +25,7 @@ const movie = async () => {
         <section className="movie_section">
             <div className="container">
                 <h1 className="my-3 text-4xl font-bold tracking-wide text-center underline capitalize underline-offset-[10px] decoration-gray-900 ">
-                    Series and Movies
+                    Series And Movies
                 </h1>
 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 p-9">
