@@ -4,9 +4,10 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'occ-0-3933-116.1.nflxso.net',
-                port: '',
-                pathname: '/**',
+                // hostname: 'occ-0-3933-116.1.nflxso.net',
+                hostname: '**',
+                // port: '',
+                // pathname: '/**',
             },
         ],
     },
